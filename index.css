@@ -1,0 +1,206 @@
+/* Import angsty Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Special+Elite&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1a1a1a; /* darkened background from pure white */
+  font-family: 'Rock Salt', cursive; /* angsty font for navbar */
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.navbar .navbar-brand:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.navbar .nav-link {
+  color: #ddd; /* light gray for contrast */
+  font-family: 'Rock Salt', cursive;
+  font-weight: normal;
+  letter-spacing: 0.8px;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.navbar .nav-link.disabled {
+  color: #555;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+/* Body: light background fallback */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111; /* fallback color */
+}
+
+/* Hero Section with background image */
+#landing {
+  height: 100vh;
+  background-image: url('./images/glen-alejandro-EQ7vori1wJU-unsplash.jpg'); /* hero image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-family: 'Special Elite', monospace; /* angsty font for body text */
+}
+
+/* Dark overlay for readability */
+#landing::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* adjust opacity if needed */
+  z-index: 1;
+}
+
+/* Ensure content is above overlay */
+#landing > .row {
+  position: relative;
+  z-index: 2;
+}
+
+/* Hero Image */
+#landing img {
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  max-width: 100%;
+}
+
+/* Hero Text */
+#landing h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  font-family: 'Rock Salt', cursive; /* angsty font for headings */
+}
+
+#landing p {
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+/* Carousel Section */
+#motorcycles .carousel {
+  max-width: 600px;   /* smaller width */
+  margin: 2rem auto;  /* vertical spacing + centered */
+}
+
+#motorcycles .carousel-inner img {
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Heading Section */
+#heading h2 {
+  color: #ddd;
+  font-weight: normal;
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Rock Salt', cursive; /* angsty font for headings */
+}
+
+#heading p.lead {
+  font-size: 1.2rem;
+  color: #ddd;
+  text-align: center;
+  font-family: 'Special Elite', monospace;
+}
+
+.why-us-title {
+    font-family: 'Rock Salt', cursive; /* angsty heading font */
+    font-weight: normal;
+    color: #ddd;
+}
+
+.why-us-text {
+    font-family: 'Special Elite', monospace; /* angsty paragraph font */
+    color: #eee;        /* light color for contrast */
+    font-size: 1.1rem;
+    line-height: 1.6;   /* better readability */
+}
+
+/* Cards */
+/* Make cards a bit smaller */
+#cards .card {
+  max-width: 400px;  /* limit card width */
+  margin: 0 auto;    /* center cards within their column */
+  border: none;
+  transition: transform 0.3s ease;
+  font-family: 'Special Elite', monospace; /* angsty font for card text */
+}
+
+/* Darken description area */
+#cards .card-body {
+  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+  color: #fff;                          /* white text for contrast */
+  padding: 1rem;
+  border-radius: 0 0 0.5rem 0.5rem;    /* rounded bottom corners */
+}
+
+/* Optional: scale effect on hover */
+#cards .card:hover {
+  transform: translateY(-5px);
+}
+
+.card {
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-weight: 600;
+  font-family: 'Rock Salt', cursive; /* angsty font for card titles */
+}
+
+.card-text {
+  color: whitesmoke;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  background-color: #111;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-family: 'Special Elite', monospace;
+}
+
+footer a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+footer a:hover {
+  color: #ccc;
+}

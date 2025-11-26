@@ -73,7 +73,7 @@ body {
 }
 
 /* Dark overlay for readability */
-#landing::before {
+#hero::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -82,26 +82,26 @@ body {
 }
 
 /* Ensure content is above overlay */
-#landing > .row {
+#hero > .row {
   position: relative;
   z-index: 2;
 }
 
 /* Hero Image */
-#landing img {
+#hero img {
   border-radius: 50%;
   box-shadow: 0 0 15px rgba(0,0,0,0.7);
   max-width: 100%;
 }
 
 /* Hero Text */
-#landing h1 {
+#hero h1 {
   font-size: 3rem;
   font-weight: normal;
   font-family: 'Rock Salt', cursive; /* angsty font for headings */
 }
 
-#landing p {
+#hero p {
   margin-top: 1rem;
   font-style: italic;
   font-size: 1.1rem;
